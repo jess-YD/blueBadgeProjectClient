@@ -27,7 +27,8 @@ class Signup extends Component {
         }).then(
             (response) => response.json()
         ).then((data) => {
-            this.props.setToken(data.sessionToken)
+            console.log(data)
+            this.props.setToken(data.token)
         })
         //console.log(this.state)
         event.preventDefault()

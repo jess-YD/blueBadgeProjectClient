@@ -41,7 +41,7 @@ class Sitebar extends React.Component {
           sessionToken: '',
         });
         localStorage.removeItem('token');
-        this.forceUpdate();
+        window.location.reload();
       }
 
       render() {
@@ -52,18 +52,6 @@ class Sitebar extends React.Component {
               <NavbarToggler onClick={this.toggle} />
               <Collapse isOpen={this.state.isOpen} navbar>
                 <Nav className="ml-auto" navbar>
-                  <NavItem>
-                    <NavLink href="/components/" style={styles.text}>SHOP</NavLink>
-                  </NavItem>
-                  <NavItem>
-                    <NavLink href="https://github.com/reactstrap/reactstrap" style={styles.text}>FAQ</NavLink>
-                  </NavItem>
-                  <NavItem>
-                    <NavLink href="https://github.com/reactstrap/reactstrap" style={styles.text}>SUPPORT</NavLink>
-                  </NavItem>
-                  <NavItem>
-                    <NavLink href="https://github.com/reactstrap/reactstrap" style={styles.text}>MAINTENANCE</NavLink>
-                  </NavItem>
                   <NavItem>
                     <button onClick={() => this.logout()}>
                       LOGOUT

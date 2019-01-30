@@ -42,14 +42,14 @@ export default class Shows extends Component {
             .then((res) => this.fetchShows())
     }
 
-    ShowsUpdate = (event, show) => {
+    showsUpdate = (event, show) => {
         console.log(show)
-        fetch(`${APIURL}/show/rollingwiththehomies/${event.target.id}`, {
+        fetch(`${APIURL}/show/rollingwiththehomies/${show.id}`, {
             method: 'PUT',
             body: JSON.stringify({ show: show }),
             headers: new Headers({
                 'Content-Type': 'application/json',
-                'Authorization': this.props.token
+                'Authorization': localStorage.getItem('token')
             })
         })
             .then((res) => {

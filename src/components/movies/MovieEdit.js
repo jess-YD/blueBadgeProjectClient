@@ -6,6 +6,7 @@ class MovieEdit extends Component {
     constructor(props) {
         super(props);
         this.state = {
+            id: "",
             movieTitle: "",
             releaseYear: "",
             imageURL: "",
@@ -13,7 +14,7 @@ class MovieEdit extends Component {
     }
 
     componentWillMount() {
-        console.log(this.props.movie.aid);
+        console.log(this.props)
         this.setState({
             id: this.props.movie.id,
             movieTitle: this.props.movie.movieTitle,
@@ -31,6 +32,7 @@ class MovieEdit extends Component {
     handleSubmit = (event) => {
         event.preventDefault();
         console.log(this.state);
+        console.log(event)
         this.props.update(event, this.state)
     }
 

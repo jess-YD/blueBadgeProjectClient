@@ -42,14 +42,14 @@ export default class Movies extends Component {
             .then((res) => this.fetchMovies())
     }
 
-    MoviesUpdate = (event, movie) => {
+    moviesUpdate = (event, movie) => {
         console.log(movie)
-        fetch(`${APIURL}/movies/rollingwiththehomies/${event.target.id}`, {
+        fetch(`${APIURL}/movie/rollingwiththehomies/${movie.id}`, {
             method: 'PUT',
             body: JSON.stringify({ movie: movie }),
             headers: new Headers({
                 'Content-Type': 'application/json',
-                'Authorization': this.props.token
+                'Authorization': localStorage.getItem('token')
             })
         })
             .then((res) => {

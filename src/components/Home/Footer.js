@@ -46,10 +46,8 @@ const styles = {
             showLabels
             className={classes.foot}
           >
-            <BottomNavigationAction className={classes.icon} label="SHOP" icon={<ShoppingCartIcon />} />
             <BottomNavigationAction className={classes.icon}  label="FAQ" icon={<QuestionAnswerIcon />} />
             <BottomNavigationAction className={classes.icon}  label="SUPPORT" icon={<ContactSupportIcon />} />
-            <BottomNavigationAction className={classes.icon}  label="MAINTENANCE" icon={<BuildIcon />} />
             <BottomNavigationAction className={classes.icon}  label="CONTACT" icon={<PermContactCalendarIcon />} />
           </BottomNavigation>
         );

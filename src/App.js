@@ -5,7 +5,6 @@ import Auth from './components/auth/Auth';
 // import Movies from './components/movies/Movies';
 // import Shows from './components/shows/Shows';
 import Collector from './components/Home/Collector'
-import Sitebar from './components/Home/Navbar';
 //import MovieTable from './components/movies/MovieTable';
 import Footer from './components/Home/Footer';
 import {
@@ -68,7 +67,6 @@ protectedViews = () => { // it checks to see of you are logged in
     return (
       <Router>
       <div>
-        <Sitebar />
         {this.protectedViews()}
         <footer><Footer /></footer>
       </div>
