@@ -34,7 +34,7 @@ handleSubmit = (event) => {
         return (
             <div>
                 <h1>Login</h1>
-                <h6>Login in to see more of your favorite tight movies and shows!</h6>
+                <h6>Login to see more of the sickest movies and shows!</h6>
                 <Form onSubmit={this.handleSubmit} > 
                     <FormGroup>
                         <Label for="username">Username</Label>

@@ -1,3 +1,23 @@
-imageURL {
-    height: 3rem;
+
+img {
+    width: 30%;
+    margin-left: 14rem;
+}
+
+h2 {
+    margin-left: 26rem;
+    margin-top: 4rem;
+    font-size: 300%;
+    color: hotpink;
+    padding: 2rem;
+    text-decoration: underline;
+    font-style: oblique;
+}
+
+table {
+    margin-left: 5rem;
+}
+
+th {
+    margin-left: 4rem;
 }

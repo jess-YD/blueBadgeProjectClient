@@ -6,7 +6,7 @@ import Auth from './components/auth/Auth';
 // import Shows from './components/shows/Shows';
 import Collector from './components/Home/Collector'
 //import MovieTable from './components/movies/MovieTable';
-import Footer from './components/Home/Footer';
+//import Footer from './components/Home/Footer';
 import {
   BrowserRouter as Router,
   Route,
@@ -68,7 +68,7 @@ protectedViews = () => { // it checks to see of you are logged in
       <Router>
       <div>
         {this.protectedViews()}
-        <footer><Footer /></footer>
+        
       </div>
       </Router>
     );

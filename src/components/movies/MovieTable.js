@@ -31,7 +31,7 @@ class MovieTable extends Component {
                                 <tr>
                                     <th>Movie Title</th>
                                     <th>Release Year</th>
-                                    <th>Super Sick Movie Pic</th>
+
                                     <th><Button id="create-movie" onClick={this.toggle}>Add Movie</Button></th>
                                  </tr>
                             </thead>

@@ -48,8 +48,8 @@ class Sitebar extends React.Component {
         return (
           <div style={styles.navbar}>
             <Navbar expand="md">
-              <NavbarBrand href="/" style={styles.text}>80s</NavbarBrand>
-              <NavbarToggler onClick={this.toggle} />
+              <NavbarBrand href="/" style={styles.text}>Totally 80s</NavbarBrand>
+            
               <Collapse isOpen={this.state.isOpen} navbar>
                 <Nav className="ml-auto" navbar>
                   <NavItem>

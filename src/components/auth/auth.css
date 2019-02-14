@@ -1,11 +1,33 @@
 .auth-container {
-    margin-top: 5em;
+    margin-top: 1em;
     padding: 2em;
-    border: 1px solid yellow;
-    border-radius: 0.4em;
-    box-shadow: 2px 4px 20px pink;
+    border: 5px solid skyblue;
+    border-radius: 1.4em;
+    box-shadow: 4px 15px 20px pink;
+    background-color: lavenderblush
 }
 
-.login-col {
-    border-left: 1px solid purple;
+body {
+    background-color: yellow;
 }
+
+
+
+h1 {
+    padding: 0em;
+    top: 50%;
+    font-size: 50px;
+    margin-left:30rem;
+    color: rgb(238, 87, 180);
+}
+
+h6 {
+    font-size: 1em;
+    color: purple;
+}
+
+form {
+    margin-left:25rem;
+
+}
+

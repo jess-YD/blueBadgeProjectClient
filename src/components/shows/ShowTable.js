@@ -32,7 +32,7 @@ class ShowTable extends Component {
                                     <th>Show Title</th>
                                     <th>Start Year</th>
                                     <th>End Year</th>
-                                    <th>Super Sick Show Pic</th>
+
                                     <th><Button id="create-show" onClick={this.toggle}>Add Show</Button></th>
                                  </tr>
                             </thead>
